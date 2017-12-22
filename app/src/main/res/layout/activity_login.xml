@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/b1457"
+    tools:context="com.artisticshowroom.esprit.tn.artisticshowroommobile.loginActivity">
+
+    <EditText
+        android:id="@+id/SIGN"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="AUTHENTIFICATION"
+        android:textColor="#8B0000"
+        tools:layout_editor_absoluteX="72dp"
+        tools:layout_editor_absoluteY="66dp" />
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginLeft="100dp"
+        android:background="@drawable/logo2125"
+        android:layout_below="@+id/SIGN"
+        android:layout_alignEnd="@+id/SIGN"
+        android:layout_marginEnd="13dp" />
+
+    <EditText
+        android:id="@+id/logintxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="login"
+        android:textColor="#FFFFFFFF"
+        tools:layout_editor_absoluteX="72dp"
+        tools:layout_editor_absoluteY="146dp"
+        android:layout_marginTop="160dp"
+        android:layout_below="@+id/SIGN"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/pwdtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:textColor="#FFFFFFFF"
+        tools:layout_editor_absoluteX="72dp"
+        tools:layout_editor_absoluteY="245dp"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/logintxt" />
+
+    <Button
+        android:id="@+id/btnsignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign up"
+        tools:layout_editor_absoluteX="212dp"
+        tools:layout_editor_absoluteY="321dp"
+        android:textColor="#CD5C5C"
+        android:layout_marginTop="42dp"
+        android:layout_below="@+id/pwdtxt"
+        android:layout_toStartOf="@+id/signin"
+        android:layout_marginEnd="36dp" />
+
+    <Button
+        android:id="@+id/signin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#CD5C5C"
+        android:layout_alignBaseline="@+id/btnsignup"
+        android:layout_alignBottom="@+id/btnsignup"
+        android:layout_alignEnd="@+id/pwdtxt"
+        android:layout_marginEnd="12dp"
+        android:text="Sign In" />
+</RelativeLayout>
